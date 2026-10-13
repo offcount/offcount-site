@@ -9,15 +9,18 @@
 .policy{max-width:850px;padding:60px 0}.policy h1{font-size:32px;font-weight:500;line-height:1.5}.policy h2{font-size:20px;margin-top:35px}.policy p,.policy li{font-size:14px}.policy .date{font-size:12px;color:var(--muted)}.policy ul{padding-left:1.4em}
 @media(max-width:700px){header{flex-wrap:wrap;gap:12px}nav{flex-wrap:wrap}.hero h1{font-size:30px}.policy{padding:35px 0}.policy h1{font-size:26px}.business h3{font-size:42px}}
 
-/* Official artwork is unchanged; frames omit only the supplied empty margins. */
-header{padding:20px 0;min-height:145px}.brand{display:block;flex-shrink:0}
-.offcount-logo{display:block;position:relative;width:124px;height:110px;overflow:hidden}
-.offcount-logo img{position:absolute;width:320px;max-width:none;height:auto;left:-98px;top:-39px}
+/* Supplied tightly trimmed artwork: preserve the full image and its aspect ratio. */
+header{padding:28px 0;min-height:104px;flex-wrap:wrap}.brand{display:block;max-width:100%;flex-shrink:0}
+.offcount-logo{display:flex;align-items:center;gap:14px;width:278px;max-width:100%}
+.offcount-logo img{display:block;height:auto;object-fit:contain;min-width:0}
+.offcount-symbol{width:66px;flex:0 0 66px}.offcount-wordmark{width:198px;flex:1 1 auto}
 .hero{padding:64px 0 60px}.hero h1{font-size:clamp(30px,3.8vw,48px);letter-spacing:.015em;line-height:1.55}.hero p{max-width:740px}.hero .rule{background:var(--accent);height:3px;width:54px}
-.business.pawser{background:#f5f2f4;color:#4e454a;border-color:#ddd5da}
-.business h3.pawser-logo{position:relative;width:270px;max-width:100%;height:60px;overflow:hidden;margin:34px 0 18px}
-.pawser-logo img{position:absolute;width:350px;max-width:none;height:auto;left:-41px;top:-72px}
-.business.arbinavi{background:#153e4c;color:#fff;border-color:#153e4c}.business.arbinavi .bottom{color:#fff}.business .wordmark{font-family:Arial,sans-serif;letter-spacing:-.03em;font-weight:600}.business .usage{border-color:#607c86}.business .data-note{opacity:1;color:#dae4e8}
-.contact{background:#f1f5f6;border-left:3px solid var(--accent)}.section-head span{color:var(--muted)}.privacy a{font-weight:600}
-@media(max-width:700px){header{min-height:0;gap:20px}nav{gap:12px 20px;width:100%;font-size:12px}.hero{padding:40px 0}.hero h1{font-size:28px}.business{padding:25px}.business h3.pawser-logo{transform-origin:left center}.offcount-logo{width:112px;height:99px}.offcount-logo img{width:290px;left:-89px;top:-35px}}
-@media(max-width:360px){.business h3.pawser-logo{width:230px}.pawser-logo img{width:300px;left:-35px;top:-62px}}
+.business{min-width:0}.business.pawser{background:#f5f2f4;color:#4e454a;border-color:#ddd5da}
+.business h3.pawser-logo{width:270px;max-width:100%;margin:34px 0 18px;line-height:1}
+.pawser-logo img{display:block;width:100%;height:auto;object-fit:contain}
+.business.arbinavi{background:var(--ink);color:#fff;border-color:var(--ink)}.business.arbinavi .bottom{color:#fff}.business .wordmark{font-family:Arial,sans-serif;letter-spacing:-.03em;font-weight:600}.business .usage{border-color:#607c86}.business .data-note{opacity:1;color:#dae4e8}
+.contact{background:#f1f5f6;border-left:3px solid var(--accent)}.contact-details{display:flex;flex-direction:column;gap:8px;flex-shrink:0;font-size:13px}.contact-email{font:clamp(18px,2.5vw,25px)/1.5 Arial,sans-serif}.contact-phone{align-self:flex-start;font-size:15px}.contact-details span{color:var(--muted)}
+.section-head span{color:var(--muted)}.privacy a{font-weight:600}.about dd{min-width:0;overflow-wrap:anywhere}a{overflow-wrap:anywhere}
+@media(max-width:850px){.contact{flex-direction:column;align-items:flex-start}}
+@media(max-width:700px){header{min-height:0;gap:20px;padding:24px 0}nav{gap:12px 20px;width:100%;font-size:12px}.offcount-logo{width:242px;gap:12px}.offcount-symbol{width:58px;flex-basis:58px}.offcount-wordmark{width:172px}.hero{padding:40px 0}.hero h1{font-size:28px}.business{padding:25px}.meta{flex-wrap:wrap}.section-head{flex-wrap:wrap}.contact-details{max-width:100%}}
+@media(max-width:360px){.wrap{padding:0 18px}.business{padding:22px}.hero h1{font-size:25px}.about dl>div{grid-template-columns:72px 1fr;gap:12px}.contact{padding:22px}.contact-email{font-size:20px}}
